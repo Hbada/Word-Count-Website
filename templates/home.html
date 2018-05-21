@@ -1,0 +1,12 @@
+<h1>The word counter</h1>
+<h2>for fans of words</h2>
+
+<p>This is my first Django website, a total success doing basic page structures to create a form with word count. Created using Django and Atom code editor while following Django 2 and Python course by Nick Walter on Udemy.com.</p>
+<a href="{% url 'about' %}">About page</a>
+
+<form class="" action="{% url 'count' %}" method=""> <!-- url info matches name in urls.py
+  so if you change name of file, it still loads because urls.py has name= to refer to -->
+  <textarea name="fulltext" rows="5" cols="40"></textarea>
+  <br />
+  <input type="submit" name="" value="Count!" />
+</form>

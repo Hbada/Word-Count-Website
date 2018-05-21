@@ -1,0 +1,13 @@
+<a href="{% url 'home' %}">Return to home page</a>
+<h1>{{ count }} words were sent to Terminal</h1>
+<!-- 'count' is key of len(wordlist) in views.py count()'s dictionary -->
+
+<p>and here too:</p>
+
+{{ fulltext }}
+
+<h1>Word count:</h1>
+
+  {% for word, counttotal in worddictionary %}
+    <p>{{ word }} - {{ counttotal }}</p>
+  {% endfor %}
